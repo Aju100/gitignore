@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+
+#############################################################################
+# 	Author: Aju Tamang | blog: https://csaju.com                            #
+#                                                                           #
+# 	Description: CLI app that will create a .gitignore file for the project #
+# 			   	 specified by the developer for productivity instead of     # 
+#              	 wasting time to get the templates of specific programming  #
+#              	 projects on the browser.                                   #
+#																			#
+# 	License: MIT (c)                                                        #
+#############################################################################
+
+banner(){
+
+printf """
+
+        .__  __  .__                                    
+   ____ |__|/  |_|__| ____   ____   ___________   ____  
+  / ___\|  \   __\  |/ ___\ /    \ /  _ \_  __ \_/ __ \ 
+ / /_/  >  ||  | |  / /_/  >   |  (  <_> )  | \/\  ___/ 
+ \___  /|__||__| |__\___  /|___|  /\____/|__|    \___  >
+/_____/            /_____/      \/                   \/ 
+
+
+                                                                                                                    
+"""
+}
+
+main(){
+	echo "Please enter any techstack for your project"
+	read input
+	read -p "Are you sure? (y/n) " -n 1
+	echo
+	if [ -f .gitignore ]; then
+		rm .gitignore
+	fi
+#		rm .gitignore
+	if [[ $REPLY =~ ^[Yy]$ ]]; then
+		echo "Successfully created .gitignore file for $input"
+		curl -sL https://www.toptal.com/developers/gitignore/api/$input>>.gitignore
+	fi
+}
+
+
+showhelp() {
+  echo " Help:"
+  echo "  Usage: $0 [-h]"
+  echo "    -h: Display help manual"
+  echo "    -v: Display version of gitignore"
+  echo ""
+  echo "  Example: gitignore "
+  banner
+  echo "  Please enter any techstack for your project   "
+  echo "  python "
+  echo "  Are you sure? (y/n) y "
+  echo "  Successfully created .gitignore file for python"
+  echo ""
+}
+
+while getopts ':hv' flag;do
+	case "${flag}" in
+		h) 
+			showhelp
+			exit 1 
+			;;
+		v)
+			echo "gitignore version 1.0"
+			exit 1
+			;;
+		*)
+			echo "No valid option choosed."
+			exit 1;;
+	esac
+done
+
+banner
+main
