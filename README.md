@@ -10,6 +10,7 @@ CLI app that will create a .gitignore file for the project specified by the deve
   - [Installation](##installatoin)
   - [Contribute](#contribute)
   - [Help](#help)
+  - [Acknowledgements and Credits](#Acknowledgements-and-Credits)
 
 ## Installation
 
@@ -43,5 +44,11 @@ If you need any help anywhere in the process, you can open [Github issue](https:
 ## License
 
 This project is currently licensed under the MIT General Public License v3. i.e. we guarantee end users the freedom to run, study, share, and modify the software.
+
+# Acknowledgements and Credits
+
+gitignore is just a automating script. It would not have been possible without the following organization.
+
+- [Toptal](https://www.toptal.com/developers/gitignore)
 
 Made with ❤️ and Bash
