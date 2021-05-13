@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-#############################################################################
-# 	Author: Aju Tamang | blog: https://csaju.com                            #
-#                                                                           #
-# 	Description: CLI app that will create a .gitignore file for the project #
-# 			   	 specified by the developer for productivity instead of     # 
-#              	 wasting time to get the templates of specific programming  #
-#              	 projects on the browser.                                   #
-#																			#
-# 	License: MIT (c)                                                        #
-#############################################################################
+##########################################################################################
+# 	Author: Aju Tamang | blog: https://csaju.com                                     #
+#                                                                                        #
+# 	Description: CLI app that will create a .gitignore file for the project          #
+# 			   	 specified by the developer for productivity instead of  # 
+#              	 wasting time to get the templates of specific programming               #
+#              	 projects on the browser.                                                #
+#											 #								#
+# 	License: MIT (c)                                                                 #
+##########################################################################################
 
 banner(){
 
