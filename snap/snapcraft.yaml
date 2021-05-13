@@ -12,7 +12,7 @@ confinement: strict
 
 apps:
   gitignore:
-    command: gitignore
+    command: bin/gitignore
 
 parts:
   gitignore:
