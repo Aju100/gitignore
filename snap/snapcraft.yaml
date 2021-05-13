@@ -1,7 +1,7 @@
 name: gitignores
 base: core18
 version: "0.1"
-summary: gitignore
+summary: gitignores
 description: |
   CLI app that will create a .gitignore file for the project specified by the developer
   for productivity instead of wasting time to get the templates of specific programming 
@@ -12,7 +12,7 @@ confinement: strict
 
 apps:
   gitignore:
-    command: bin/gitignore
+    command: bin/gitignores
 
 parts:
   gitignore:
