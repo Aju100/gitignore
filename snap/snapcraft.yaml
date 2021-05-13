@@ -7,8 +7,8 @@ description: |
   for productivity instead of wasting time to get the templates of specific programming 
   projects on the browser.
 
-grade: devel
-confinement: devmode
+grade: stable
+confinement: strict
 
 apps:
   gitignore:
