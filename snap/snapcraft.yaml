@@ -13,6 +13,8 @@
   apps:
     gitignore:
       command: gitignore
+      source: .
+
  
   parts:
     gitignore:
